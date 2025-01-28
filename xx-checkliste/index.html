@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Checklist</title>
+    <script src="https://cdn.jsdelivr.net/npm/marked@3.0.7/marked.min.js"></script>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Checklist</h1>
+      <ul id="checklist">
+        <li>
+          <input type="checkbox" id="task1" />
+          <label for="task1">Buy groceries</label>
+        </li>
+        <li>
+          <input type="checkbox" id="task2" />
+          <label for="task2">Complete homework</label>
+        </li>
+        <li>
+          <input type="checkbox" id="task3" />
+          <label for="task3">Call Mom</label>
+        </li>
+      </ul>
+      <button id="clearButton">Clear Completed</button>
+    </div>
+    <div id="content">loading...</div>
+    <script src="script.js"></script>
+  </body>
+</html>

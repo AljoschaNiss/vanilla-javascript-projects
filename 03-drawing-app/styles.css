@@ -1,0 +1,16 @@
+p {
+  display: inline;
+  color: red;
+}
+
+h1 {
+  display: inline;
+}
+
+.container {
+  display: hidden;
+}
+
+.div-element {
+  display: inline;
+}

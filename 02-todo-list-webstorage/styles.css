@@ -1,0 +1,167 @@
+body {
+  font-family: "Arial", sans-serif;
+  background: #f5f5f5;
+  /* display: flex; */
+  /* align-items: center; */
+  /* justify-content: center; */
+  height: 100vh;
+  margin: 0;
+}
+
+header {
+  display: var(--header-display-mode);
+  justify-content: var(--header-justify-content);
+}
+
+header h1 {
+  color: var(--h1-header-color);
+  font-size: 3rem; /* Base size */
+  margin: 0;
+  padding: 0.8rem 0.5rem 1rem;
+  text-shadow: 2px 4px 6px rgba(0, 0, 0, 0.1);
+  line-height: 1.5;
+  letter-spacing: 1.2px;
+  /* background-color: rgba(
+    var(--rgba-red-channel),
+    var(--rgba-green-channel),
+    var(--rgba-blue-channel),
+    var(--rgba-alpha-channel)
+  ); */
+}
+
+header h1:hover {
+  text-shadow: 4px 6px 10px rgba(0, 0, 0, 0.15);
+  transform: scale(1.02);
+  transition: all 0.3s ease-in-out;
+}
+
+.container {
+  /* border
+  : 2px solid blue; */
+  display: var(--container-display-mode);
+  justify-content: var(--container-justify-content);
+  flex-direction: var(--container-flex-direction);
+  align-items: var(--container-align-items);
+}
+
+.container-buttons {
+  display: var(--container-buttons-display-mode);
+  justify-content: var(--container-buttons-justify-content);
+  flex-direction: var(--container-buttons-flex-direction);
+}
+
+footer {
+  display: var(--footer-display-mode);
+  justify-content: var(--footer-justify-content);
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 10px 0;
+}
+
+/* should be at the right place in the order of the HTML tags. */
+#item-input {
+  font-size: 16px;
+  padding: 12px 16px;
+  border: 2px solid #ddd;
+  border-radius: 8px;
+  outline: none;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+  background-color: #fff;
+}
+
+#item-input:focus {
+  border-color: #8b9cff;
+  box-shadow: 0 0 15px rgba(124, 16, 226, 0.4);
+}
+
+#item-input:disabled {
+  background-color: #f5f5f5;
+  color: #aaa;
+  border-color: #ddd;
+  cursor: not-allowed;
+}
+
+#item-input::placeholder {
+  color: #aaa;
+  font-style: italic;
+}
+
+#item-list {
+  margin: 0;
+  padding: 0;
+  /* width: 50%; */
+  list-style-type: none;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+#item-list .list-item {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  border: 2px solid #ddd;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  /* width: 100%; */
+  font-family: Arial, sans-serif; /* Sets the font */
+  font-size: 20px; /* Sets the text size */
+  color: #333; /* Sets the text color */
+  margin-bottom: 5px;
+}
+
+#item-list .list-item:hover {
+  color: #6c63ff; /* Changes text color on hover */
+  cursor: pointer; /* Adds a pointer cursor */
+}
+
+#item-list .list-item span {
+  margin: auto 20px;
+  /* margin: 1rem 0 1rem 1rem; */
+  /* display: inline-block; */
+  text-align: center;
+  height: fit-content;
+  /* margin-right: 50px; */
+}
+
+button {
+  margin: 10px;
+  padding: 12px 24px;
+  font-size: 16px;
+  font-weight: 600;
+  color: #ffffff;
+  background: linear-gradient(45deg, #6c63ff, #8b9cff);
+  border: none;
+  border-radius: 8px;
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+button:hover {
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+  transform: translateY(-2px);
+}
+
+button:active {
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2);
+  transform: translateY(1px);
+}
+
+/* making it responsive with vanilla css3. */
+@media (max-width: 768px) {
+  h1 {
+    font-size: 2.5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  h1 {
+    font-size: 2rem;
+  }
+}

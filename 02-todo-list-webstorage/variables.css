@@ -1,0 +1,32 @@
+:root {
+  --rgba-red-channel: red;
+  --rgba-green-channel: green;
+  --rgba-blue-channel: blue;
+  --rgba-alpha-channel: 1;
+}
+
+header {
+  --header-display-mode: flex;
+  --header-justify-content: center;
+}
+
+header h1 {
+  --h1-header-color: grey;
+}
+
+.container {
+  --container-display-mode: flex;
+  --container-justify-content: center;
+  --container-flex-direction: column;
+  --container-align-items: center;
+}
+.container-buttons {
+  --container-buttons-display-mode: flex;
+  --container-buttons-justify-content: center;
+  --container-buttons-flex-direction: row;
+}
+
+footer {
+  --footer-display-mode: flex;
+  --footer-justify-content: center;
+}

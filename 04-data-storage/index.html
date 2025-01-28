@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>Data Storage</h1>
+    <form>
+      <label for="inputKey">Key</label>
+      <input
+        type="text"
+        id="input-key"
+        alt="type in the key."
+        name="inputKey"
+      />
+      <span id="key-error" class="error"></span>
+      <label for="inputValue">Value</label>
+      <input
+        type="text"
+        id="input-value"
+        alt="type in the value."
+        name="inputValue"
+      />
+      <hr />
+      <h2>Local Storage</h2>
+      <button id="btn-local-storage-add">add item</button>
+      <button id="btn-local-storage-rm">remove item</button>
+      <button id="btn-local-storage-clr">clear storage</button>
+      <hr />
+      <button id="btn-session-storage-add">add item</button>
+      <button id="btn-session-storage-rm">remove item</button>
+      <hr />
+      <button id="btn-IndexedDB">IndexedDB</button>
+      <button id="btn-WebSQL">WebSQL</button>
+      <button id="btn-Cookies">Cookies</button>
+    </form>
+    <p>also implement remove from storage.</p>
+  </body>
+  <script src="script.js"></script>
+</html>

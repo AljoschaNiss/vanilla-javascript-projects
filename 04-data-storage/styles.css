@@ -1,0 +1,27 @@
+:root {
+  --h1-color: blue;
+  --error-span-color: red;
+  --success-span-color: green;
+  --invalid-input-color: red;
+  --valid-input-color: green;
+}
+
+h1 {
+  color: var(--h1-color);
+}
+
+span.success {
+  color: var(--success-span-color);
+}
+
+span.error {
+  color: var(--error-span-color);
+}
+
+input:valid {
+  border: 1px solid var(--valid-input-color);
+}
+
+input:invalid {
+  border: 1px solid var(--invalid-input-color);
+}

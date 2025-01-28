@@ -94,6 +94,7 @@ function createListItem(inputValue, index) {
   itemList.appendChild(listItem);
 }
 
+//TODO: set a jest test with mocking the localStorage Objekt.prototype
 function setItemInLocalStorage(value) {
   try {
     const taskItems = JSON.parse(localStorage.getItem("taskItems")) || [];

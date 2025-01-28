@@ -1,3 +1,15 @@
+# Node.js environment (find node modules in every project / subfolder)
+**/node_modules
+
+# IDE/Editor directories
+.idea/
+.vscode/
+*.sublime-workspace
+
+# Operating system files
+.DS_Store
+Thumbs.db
+
 # Prerequisites
 *.d
 
